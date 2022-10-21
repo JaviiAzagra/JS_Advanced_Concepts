@@ -80,8 +80,7 @@ document.body.appendChild(button$$)
 /* 1.5 Basandote en el ejercicio anterior. Crea un botón que elimine el último 
 elemento de la lista. */
 
-/* 
-const button$$ = document.createElement("button");
+/* const button$$ = document.createElement("button");
 
 function eliminar () {
 	const divs$$ = document.querySelectorAll("div");
@@ -90,9 +89,22 @@ function eliminar () {
 
 button$$.addEventListener("click", eliminar);
 
-button$$.textContent = "Eliminar";
- */
+button$$.textContent = "Eliminar"; */
+
 
 /* 1.6 Basandote en el ejercicio anterior. Crea un botón para cada uno de los 
 elementos de las listas que elimine ese mismo elemento del html. */
 
+/* const divs$$ = document.querySelectorAll('div')
+let firstDiv = divs$$[0];
+
+ for (const div of divs$$) {
+    let button2$$ = document.createElement('button');
+    button2$$.textContent = 'Elimíname!';
+    button2$$.style.padding = '15px';
+
+    if(div !== firstDiv) div.appendChild(button2$$);
+    button2$$.addEventListener('click', () => {
+        div.remove();
+    })
+ } */
